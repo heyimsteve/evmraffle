@@ -1,0 +1,52 @@
+.admin-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.admin-button {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.admin-button:hover {
+  background-color: #c53030;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+}
+
+.admin-dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 240px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.dropdown-option {
+  padding: 12px 16px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background-color 0.2s;
+}
+
+.dropdown-option:hover {
+  background-color: #f7f0ff;
+  color: var(--primary-color);
+}
