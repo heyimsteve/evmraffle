@@ -2,6 +2,17 @@
 
 A decentralized raffle application built on Ethereum and Abstract networks where users can buy tickets for a chance to win the entire jackpot. The application features a continuously rolling pot, where each ticket has a configurable chance to win the growing jackpot. If a player wins, they receive the pot (minus a small fee) and the pot resets.
 
+# Preview
+
+<img width="1671" alt="Screenshot 2025-04-16 at 1 23 43 PM" src="https://github.com/user-attachments/assets/598092d2-a612-448c-b8c4-2987f654c241" />
+<img width="1676" alt="Screenshot 2025-04-16 at 1 22 11 PM" src="https://github.com/user-attachments/assets/c5e8c198-36d9-4689-bda5-292db95091b5" />
+<img width="1677" alt="Screenshot 2025-04-16 at 1 24 14 PM" src="https://github.com/user-attachments/assets/457c1fac-b192-4112-92b2-a185862ac8e0" />
+<img width="1676" alt="Screenshot 2025-04-16 at 1 25 17 PM" src="https://github.com/user-attachments/assets/60392e2c-8870-455f-9717-0b577ef4ecb1" />
+<img width="1676" alt="Screenshot 2025-04-16 at 1 25 48 PM" src="https://github.com/user-attachments/assets/898fcac8-5903-479c-9dc6-3c75215990bd" />
+<img width="1677" alt="Screenshot 2025-04-16 at 1 26 02 PM" src="https://github.com/user-attachments/assets/649f4d88-8c5b-4168-957a-1451ff57b9f8" />
+<img width="1675" alt="Screenshot 2025-04-16 at 1 22 36 PM" src="https://github.com/user-attachments/assets/a56407e3-911b-4aaf-95ae-f4259cd3d974" />
+
+
 ## 🎮 Features
 
 - **Multi-Network Support**: Works on Sepolia Testnet and Abstract Testnet
