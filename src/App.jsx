@@ -2855,14 +2855,8 @@ function App() {
               Refresh Data
             </button>
           </div>
-          
-          <div className="winner-info">
-            <h2>Latest Winner</h2>
-            <p><strong>Address:</strong> {lastWinner ? formatAddress(lastWinner) : "No winners yet"}</p>
-            <p><strong>Amount Won:</strong> {lastWinAmount} ETH</p>
-          </div>
         </div>
-        
+
         <div className="activity-section">
           <h2>Recent Activity</h2>
           <div className="activity-log">
@@ -2899,6 +2893,12 @@ function App() {
           <p className="activity-info">Showing transactions from approximately the last 9 hours.</p>
         </div>
       </main>
+
+      <div className="winner-info">
+        <h2>Latest Winner</h2>
+        <p><strong>Address:</strong> {lastWinner ? formatAddress(lastWinner) : "No winners yet"}</p>
+        <p><strong>Amount Won:</strong> {lastWinAmount} ETH</p>
+      </div>
       
       <footer>
         <p>Raffle Contract: <a href={`${CHAIN_CONFIG[currentChainId].explorerUrl}/address/${contractAddress}`} target="_blank" rel="noopener noreferrer">{contractAddress}</a></p>

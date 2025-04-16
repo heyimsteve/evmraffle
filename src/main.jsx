@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { PrivyProvider } from '@privy-io/react-auth';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
 import { ToastContainer } from 'react-toastify';
@@ -11,9 +11,15 @@ import {abstract, abstractTestnet, sepolia} from 'viem/chains';
 // Privy configuration
 const privyAppId = "cm99ldj3z004pl20myevh3m13";
 
+// Determine if we should use HashRouter based on environment
+// HashRouter works better on static hosts like Vercel but has the # in URLs
+// Use environment variable to switch between router types
+const useHashRouter = import.meta.env.VITE_USE_HASH_ROUTER === 'true';
+const Router = useHashRouter ? HashRouter : BrowserRouter;
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <PrivyProvider
         appId={privyAppId}
         config={{
@@ -51,6 +57,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </PrivyProvider>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
